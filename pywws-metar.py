@@ -67,6 +67,8 @@ def on_message(client, userdata, msg):
     if 'rain' in data and data['rain'] == 0 and 'rain_day' in data and data['rain_day'] != 0:
         metar += ' RERA'
 
+    # That's it!
+    metar += '='
     print(metar)
     sys.exit(0)
 
