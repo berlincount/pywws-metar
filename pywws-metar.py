@@ -21,7 +21,7 @@ def on_message(client, userdata, msg):
 
     metar = os.environ['AIRPORT_CODE']
     # u'idx': u'2016-04-25 20:50:59',
-    metar += idx.strftime(' %m%H%MZ AUTO')
+    metar += idx.strftime(' %d%H%MZ AUTO')
 
     # u'hum_in': 42,
     # u'hum_out': 54,
